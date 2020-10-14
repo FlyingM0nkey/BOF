@@ -1,4 +1,5 @@
 #!/usr/bin/python
+
 import socket, struct
 
 RHOST = '<ip>'

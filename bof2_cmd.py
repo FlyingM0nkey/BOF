@@ -1,23 +1,24 @@
 #!/usr/bin/python
+
 import socket, struct
 
 RHOST = '<ip>'
 RPORT = <port>
 cmd = '<command>'
-
+buf_totlen = <buffer_length>
 
 """
 ##########################################################
  Offset
 
-     Put in random characters:  pattern_create.rb -l 3000
+    locate pattern_create.rb
 
-        (locate pattern_create.rb to find the module)
+    pattern_create.rb -l 3000
 
-     Copy the characters in the EIP
-        
-    !mona findmsp and note the offset  (Easier and quicker)
+    !mona findmsp
+
         OR
+
 	pattern_offset.rb -q <characters in EIP>
 
 ##########################################################    

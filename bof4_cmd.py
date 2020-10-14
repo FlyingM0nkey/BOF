@@ -1,6 +1,6 @@
 #!/usr/bin/python
-import socket, struct
 
+import socket, struct
 
 RHOST = '<ip>'
 RPORT = <port>
@@ -12,6 +12,10 @@ buf_totlen = <buffer length>
 ######################################################
 
 Find bad characters
+
+The null byte is always bad and is included in the script.
+You must add any other bad characters to line 32 below and run the test again.
+When the log data shows no bad chars and 'Unmodified' you are good.
 
 	a. Run the bad char test and copy over the bin file to the Win box
 
